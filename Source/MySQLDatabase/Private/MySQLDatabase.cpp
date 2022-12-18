@@ -26,7 +26,7 @@ void FMySQLDatabaseModule::StartupModule()
 		// Call the test function in the third party library that opens a message box
 		MYSQL* conn;
 		conn = mysql_init(0);
-		conn = mysql_real_connect(conn, "***REMOVED***", "dbcon", "***REMOVED***", "***REMOVED***", 3306, NULL, 0);
+		conn = mysql_real_connect(conn, "0.0.0.0", "dbcon", "password", "databaseName", 3306, NULL, 0);
 		if (conn)
 		{
 			MessageBox(
